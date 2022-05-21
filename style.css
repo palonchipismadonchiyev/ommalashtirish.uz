@@ -9,7 +9,7 @@
 ul {
   list-style: none;
 }
-/* container block - styles */
+/* container block - style */
 .container {
   width: clamp(298px, 95%, 1440px);
   margin: 0 auto;
@@ -30,7 +30,7 @@ ul {
   }
 }
 
-/* button styles */
+/* button style */
 .blue-green {
   position: relative;
   top: 0;
@@ -106,13 +106,28 @@ ul {
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.12);
 }
 
-/* navbar - styles */
+/* navbar - style */
 nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   height: 64px;
   z-index: 10;
+}
+.activ-nav {
+  position: fixed;
+  background-color: #fff;
+  /* box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.12); */
+  box-shadow: 0px 8px 8px rgb(0 0 0 / 15%);
+  animation: activ-nav 180ms linear forwards;
+}
+@keyframes activ-nav {
+  0% {
+    transform: translateY(-66px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 nav > div {
   height: 100%;
@@ -124,7 +139,6 @@ nav > div {
 .brand-logo {
   height: 36px;
 }
-
 .menus-list-block {
   height: 100%;
 }
@@ -164,7 +178,6 @@ nav > div {
 .menus-list > li:hover::after {
   transform: scaleX(1) !important;
 }
-
 .activ-menus-list {
   color: #76cdd8 !important;
   transform: scaleX(1) !important;
@@ -173,7 +186,7 @@ nav > div {
   transform: scaleX(1) !important;
 }
 
-/* header - styles */
+/* header - style */
 .header {
   background-image: url("./public/bg.png");
   background-size: cover;
@@ -350,7 +363,7 @@ nav > div {
   }
 }
 
-/*products - styles */
+/*products - style */
 .products-title {
   margin-top: 72px;
   margin-bottom: 38px;
@@ -397,12 +410,14 @@ nav > div {
   font-size: 16px;
   line-height: 15px;
   color: #1a2b3b;
+  letter-spacing: 0.08em;
 }
 
-/* about us - styles */
+/* about us - style */
 .about-us-container {
   display: flex;
   min-height: 600px;
+  margin-bottom: 72px;
 }
 .left-content {
   width: 50%;
@@ -450,7 +465,7 @@ nav > div {
   transform: translateX(-50%) translateY(-50%);
   width: 105%;
   height: 105%;
-  background-image: url("./public/about-us-bg.JPG");
+  background-image: url("./public/about-us-bg.png");
   background-size: cover;
   transition: all 800ms ease-in-out;
 }
@@ -458,4 +473,100 @@ nav > div {
   width: 110%;
   height: 110%;
   transform: rotate(2deg) translateX(-50%) translateY(-50%);
+}
+.statistics-block {
+  height: 300px;
+  margin-bottom: 72px;
+}
+
+/* statistics about us - style */
+.statistics-block {
+  background: rgba(0, 0, 0, 0.24);
+  background-image: url("./public/statistics.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.statistics-block-filter {
+  backdrop-filter: blur(8px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.statistics-block-filter > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+.statistics {
+  display: flex;
+  gap: 12px;
+}
+.statistics-info h1 {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.statistics-info p {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+/* sample works - style */
+.sample-works-title {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+  color: #1a2b3b;
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.sample-works {
+  width: 404px;
+  height: 650px;
+
+  background: #ffffff;
+  border: 1px solid rgba(26, 43, 59, 0.06);
+  border-radius: 6px;
+  position: relative;
+}
+.sample-works-header {
+  padding: 20px 32px;
+}
+.sample-works-name {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 33px;
+  color: #76cdd8;
+}
+
+.sample-works-location {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  gap: 4px;
+  color: #1a2b3b;
+}
+.sample-works-image {
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

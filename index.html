@@ -20,7 +20,7 @@
     />
   </head>
   <body>
-    <nav>
+    <nav id="navbar">
       <div class="container">
         <div class="brand-logo">
           <img src="./public/logo1.svg" alt="RTM" />
@@ -143,13 +143,76 @@
     </div>
     <!-- statistics about us -->
     <div class="statistics-block">
-      <div class="statistics">
-        <img src="./public/statistics.svg" alt="Qamrab olinganlik" />
-        <div class="statistics-info">
-          <h1>97%</h1>
-          <p>Qamrab olinganlik</p>
+      <div class="statistics-block-filter">
+        <div class="container">
+          <div class="statistics">
+            <img src="./public/statistics.svg" alt="Qamrab olinganlik" />
+            <div class="statistics-info">
+              <h1>97%</h1>
+              <p>Qamrab olinganlik</p>
+            </div>
+          </div>
+
+          <div class="statistics">
+            <img src="./public/lessons.svg" alt="Dars ishlanma" />
+            <div class="statistics-info">
+              <h1>286</h1>
+              <p>Dars ishlanma</p>
+            </div>
+          </div>
+
+          <div class="statistics">
+            <img src="./public/videos.svg" alt="Videodars" />
+            <div class="statistics-info">
+              <h1>369</h1>
+              <p>Videodars</p>
+            </div>
+          </div>
+
+          <div class="statistics">
+            <img src="./public/methodics.svg" alt="Metodik qo‘llanma" />
+            <div class="statistics-info">
+              <h1>365</h1>
+              <p>Metodik qo‘llanma</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <!-- sample works (Namunaviy ishlar) -->
+    <h1 class="sample-works-title">Namunaviy ishlar</h1>
+    <div class="sample-works-block">
+      <div class="sample-works">
+        <div class="sample-works-header">
+          <h1 class="sample-works-name">Xalida Turakulova</h1>
+          <p class="sample-works-locatin">
+            <img src="./public/location.svg" alt="location" />
+            Jizzax viloyati Жиззах шхтб 29 Мактаб.
+          </p>
+        </div>
+        <img
+          src="./public/sample-works.png"
+          alt="sample works"
+          class="sample-works-image"
+        />
+      </div>
+    </div>
   </body>
+
+  <script>
+    // navbar scroll effect
+    window.onscroll = function () {
+      scrollFunction();
+    };
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 448 ||
+        document.documentElement.scrollTop > 448
+      ) {
+        document.getElementById("navbar").classList.add("activ-nav");
+      } else {
+        document.getElementById("navbar").classList.remove("activ-nav");
+      }
+    }
+  </script>
 </html>
