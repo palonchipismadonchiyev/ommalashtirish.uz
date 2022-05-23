@@ -33,39 +33,65 @@
         </div>
         <div class="menus-list-block">
           <ul class="menus-list">
-            <li class="activ-menus-list">Asosiy</li>
-            <li>Metodik mahsulotlar</li>
-            <li>Biz haqimizda</li>
-            <li>Namunaviy ishlar</li>
-            <li>Ommalashtirish ishlari</li>
+            <li href="#home" class="activ-menus-list menu-item">Asosiy</li>
+            <li href="#products" class="menu-item">Metodik mahsulotlar</li>
+            <li href="#about_as" class="menu-item">Biz haqimizda</li>
+            <li href="#sample_works" class="menu-item">Namunaviy ishlar</li>
+            <li href="https://ommalashtirish.uz/populars" class="menu-item">
+              Ommalashtirish ishlari
+            </li>
           </ul>
+          <button id="openMenu"><img src="./public/menu.svg" /></button>
         </div>
       </div>
     </nav>
-    <!-- header -->
-    <div class="header">
-      <div class="bg-content"></div>
-      <div class="bg-content"></div>
-      <div class="bg-content"></div>
-      <h1>Ommalashtirish platformasi</h1>
-      <p>
-        Xalq ta’limi vazirligi huzuridagi Respublika ta’lim markazi yagona
-        platformasi pedagoglarning ilg‘or ish - tajribalarni ommalashtirishga
-        xizmat qiladi
-      </p>
+    <div class="right-sidebar">
       <div>
-        <button type="blue-green" class="blue-green">
-          <p>Ro'yxatdan o'tish</p>
-          <div></div>
-        </button>
-        <button class="blue-green border">
-          <p>Tizimga kirish</p>
-          <div></div>
-        </button>
+        <div class="right-sidebar-title">
+          <h1>Ommalashtirish.uz</h1>
+          <button id="closeMenu"><img src="./public/close.svg" /></button>
+        </div>
+        <ul class="menus-list sidebar-menus">
+          <li href="#home" class="activ-menus-list menu-item">Asosiy</li>
+          <li href="#products" class="menu-item">Metodik mahsulotlar</li>
+          <li href="#about_as" class="menu-item">Biz haqimizda</li>
+          <li href="#sample_works" class="menu-item">Namunaviy ishlar</li>
+          <li href="https://ommalashtirish.uz/populars">
+            Ommalashtirish ishlari
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="brand-logo sidebar-logos">
+        <img src="./public/logo1.svg" alt="RTM" />
+        <img src="./public/logo2.svg" alt="RTM" />
+      </div> -->
+    </div>
+    <!-- header -->
+    <div class="header" id="home">
+      <div class="bg-content"></div>
+      <div class="bg-content"></div>
+      <div class="bg-content"></div>
+      <div class="container">
+        <h1>Ommalashtirish platformasi</h1>
+        <p>
+          Xalq ta’limi vazirligi huzuridagi Respublika ta’lim markazi yagona
+          platformasi pedagoglarning ilg‘or ish - tajribalarni ommalashtirishga
+          xizmat qiladi
+        </p>
+        <div class="header-buttons">
+          <button type="blue-green" class="blue-green">
+            <p>Ro'yxatdan o'tish</p>
+            <div></div>
+          </button>
+          <button class="blue-green border">
+            <p>Tizimga kirish</p>
+            <div></div>
+          </button>
+        </div>
       </div>
     </div>
     <!-- products - (Metodik mahsulotlar) -->
-    <div class="container">
+    <div class="container" id="products">
       <h1 class="products-title">Metodik mahsulotlar</h1>
       <div class="products-block">
         <div class="products">
@@ -118,7 +144,7 @@
       </div>
     </div>
     <!-- about as - (Biz haqimizda) -->
-    <div class="about-us-container">
+    <div class="about-us-container" id="about_as">
       <div class="left-content">
         <h1 class="about-us-title">Biz haqimizda</h1>
         <ul class="about-us-lists">
@@ -147,45 +173,44 @@
       </div>
     </div>
     <!-- statistics about us -->
-    <div class="statistics-block">
-      <div class="statistics-block-filter">
-        <div class="container">
-          <div class="statistics">
-            <img src="./public/statistics.svg" alt="Qamrab olinganlik" />
-            <div class="statistics-info">
-              <h1>97%</h1>
-              <p>Qamrab olinganlik</p>
+    <div class="statistics-block-container">
+      <div class="statistics-block">
+        <div class="statistics-block-filter">
+          <div class="container">
+            <div class="statistics">
+              <img src="./public/statistics.svg" alt="Qamrab olinganlik" />
+              <div class="statistics-info">
+                <h1>97%</h1>
+                <p>Qamrab olinganlik</p>
+              </div>
             </div>
-          </div>
-
-          <div class="statistics">
-            <img src="./public/lessons.svg" alt="Dars ishlanma" />
-            <div class="statistics-info">
-              <h1>286</h1>
-              <p>Dars ishlanma</p>
+            <div class="statistics">
+              <img src="./public/lessons.svg" alt="Dars ishlanma" />
+              <div class="statistics-info">
+                <h1>286</h1>
+                <p>Dars ishlanma</p>
+              </div>
             </div>
-          </div>
-
-          <div class="statistics">
-            <img src="./public/videos.svg" alt="Videodars" />
-            <div class="statistics-info">
-              <h1>369</h1>
-              <p>Videodars</p>
+            <div class="statistics">
+              <img src="./public/videos.svg" alt="Videodars" />
+              <div class="statistics-info">
+                <h1>369</h1>
+                <p>Videodars</p>
+              </div>
             </div>
-          </div>
-
-          <div class="statistics">
-            <img src="./public/methodics.svg" alt="Metodik qo‘llanma" />
-            <div class="statistics-info">
-              <h1>365</h1>
-              <p>Metodik qo‘llanma</p>
+            <div class="statistics">
+              <img src="./public/methodics.svg" alt="Metodik qo‘llanma" />
+              <div class="statistics-info">
+                <h1>365</h1>
+                <p>Metodik qo‘llanma</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- sample works (Namunaviy ishlar) -->
-    <div class="container">
+    <div class="container" id="sample_works">
       <h1 class="sample-works-title">Namunaviy ishlar</h1>
       <div class="owl-carousel owl-theme">
         <div class="sample-works-block">
@@ -414,6 +439,54 @@
         </div>
       </div>
     </div>
+    <!-- footer -->
+    <div class="footer-block">
+      <div class="container">
+        <div class="logos">
+          <img
+            src="./public/footer-logos/uz-res-talim-vazirligi.png"
+            alt="O’zbekiston Respublikasi Xalq Ta’limi vazirligi"
+          />
+          <img
+            src="./public/footer-logos/republika-talim-markazi.png"
+            alt="Respublika ta’lim markazi"
+          />
+        </div>
+        <div class="footer-info">
+          <h1>
+            100022, Toshkent shahar, Yakkasaroy tumani, Bobur ko'chasi, 9-uy
+          </h1>
+          <p>
+            100022, Toshkent shahar, Yakkasaroy tumani, Bobur ko'chasi, 9-uy
+          </p>
+          <p>+998 (71)-246-18-05</p>
+        </div>
+        <div>
+          <ul class="footer-menus-list">
+            <li href="#home" class="menu-item">Asosiy</li>
+            <li href="#products" class="menu-item">Metodik mahsulotlar</li>
+            <li href="#about_as" class="menu-item">Biz haqimizda</li>
+            <li href="#sample_works" class="menu-item">Namunaviy ishlar</li>
+            <li href="https://ommalashtirish.uz/populars">
+              Ommalashtirish ishlari
+            </li>
+          </ul>
+          <ul class="footer-menus-list">
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Linkedin</li>
+            <li>Instagram</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-content container">
+        <h1>
+          A product of
+          <img src="./public/felix.png" alt="Felix.uz" />
+        </h1>
+        <h2>© 2022 Lift Media. All rights reserved</h2>
+      </div>
+    </div>
   </body>
 
   <script type="text/javascript">
@@ -423,8 +496,8 @@
     };
     function scrollFunction() {
       if (
-        document.body.scrollTop > 448 ||
-        document.documentElement.scrollTop > 448
+        document.body.scrollTop > 445 ||
+        document.documentElement.scrollTop > 445
       ) {
         document.getElementById("navbar").classList.add("activ-nav");
       } else {
