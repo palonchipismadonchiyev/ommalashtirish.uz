@@ -859,6 +859,7 @@ nav > div:first-child {
   padding-bottom: 16px;
 }
 .popularization-procedure-download {
+  margin-top: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
