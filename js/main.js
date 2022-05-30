@@ -24,6 +24,17 @@ $(document).ready(function () {
     var aid = $(this).attr("href");
     $("html,body").animate({ scrollTop: $(aid).offset().top }, "slow");
   });
+  // activ menu select
+  $(".block-id").hover(
+    function () {
+      var anchor = $(this).attr("id");
+
+      $('li[href="#' + anchor + '"]').addClass("activ-menus-list");
+    },
+    function () {
+      $("li").removeClass("activ-menus-list");
+    }
+  );
   // open sidebar menu
   $("#openMenu").click(function activMenu(e) {
     $(".right-sidebar").addClass("activMenu");

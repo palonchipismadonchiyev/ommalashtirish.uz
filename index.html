@@ -28,17 +28,23 @@
     <nav id="navbar">
       <div class="container">
         <div class="brand-logo">
-          <img src="./public/logo1.svg" alt="RTM" />
-          <img src="./public/logo2.svg" alt="RTM" />
+          <a href="https://www.uzedu.uz/" target="_blank">
+            <img src="./public/logo1.svg" alt="RTM" />
+          </a>
+          <a href="http://edurtm.uz/" target="_blank">
+            <img src="./public/logo2.svg" alt="RTM" />
+          </a>
         </div>
         <div class="menus-list-block">
           <ul class="menus-list">
-            <li href="#home" class="activ-menus-list menu-item">Asosiy</li>
+            <li href="#home" class="menu-item">Asosiy</li>
             <li href="#products" class="menu-item">Metodik mahsulotlar</li>
             <li href="#about_as" class="menu-item">Biz haqimizda</li>
             <li href="#sample_works" class="menu-item">Namunaviy ishlar</li>
-            <li href="https://ommalashtirish.uz/populars" class="menu-item">
-              Ommalashtirish ishlari
+            <li>
+              <a href="https://ommalashtirish.uz/populars">
+                Ommalashtirish ishlari
+              </a>
             </li>
           </ul>
           <button id="openMenu"><img src="./public/menu.svg" /></button>
@@ -67,7 +73,7 @@
       </div> -->
     </div>
     <!-- header -->
-    <div class="header" id="home">
+    <div class="header block-id" id="home">
       <div class="bg-content"></div>
       <div class="bg-content"></div>
       <div class="bg-content"></div>
@@ -79,19 +85,23 @@
           xizmat qiladi
         </p>
         <div class="header-buttons">
-          <button type="blue-green" class="blue-green">
-            <p>Ro'yxatdan o'tish</p>
-            <div></div>
-          </button>
-          <button class="blue-green border">
-            <p>Tizimga kirish</p>
-            <div></div>
-          </button>
+          <a href="https://ommalashtirish.uz/auth/erp">
+            <button type="blue-green" class="blue-green">
+              <p>Ro'yxatdan o'tish</p>
+              <div></div>
+            </button>
+          </a>
+          <a href="https://ommalashtirish.uz/auth">
+            <button class="blue-green border">
+              <p>Tizimga kirish</p>
+              <div></div>
+            </button>
+          </a>
         </div>
       </div>
     </div>
     <!-- products - (Metodik mahsulotlar) -->
-    <div class="container" id="products">
+    <div class="container block-id" id="products">
       <h1 class="products-title">Metodik mahsulotlar</h1>
       <div class="products-block">
         <div class="products">
@@ -128,329 +138,487 @@
         </div>
         <div class="products">
           <img
-            src="./public/products.png"
-            alt="Dars ishlanma"
+            src="./public/manual.png"
+            alt="Metodik qo‘llanma"
             class="products-image"
           />
           <div class="products-info">
-            <h1>Dars ishlanma</h1>
+            <h1>Metodik qo‘llanma</h1>
             <p>
-              Xalqaro tajribalarga asoslangan, ilg‘or interfaol metodlar bilan
-              o‘tilgan yuqori saviyadagi bir soatlik namuanali dars yoki
-              to‘garak mashg‘uloti ishlanmasidir.
+              O‘quv metodik qo‘llanmalar; tavsiyanoma; brashyuralar pdf formatda
+              yuboriladi.
             </p>
           </div>
         </div>
       </div>
     </div>
-    <!-- about as - (Biz haqimizda) -->
-    <div class="about-us-container" id="about_as">
-      <div class="left-content">
-        <h1 class="about-us-title">Biz haqimizda</h1>
-        <ul class="about-us-lists">
-          <li class="about-us-item">
-            Umumiy o‘rta ta’lim tizimiga o‘quv jarayonini samarali tashkil etish
-            va o‘quv jarayoniga ta’lim sifatini oshirishga qaratilgan ilg‘or ish
-            tajribalar, zamonaviy pedagogik texnologiyalarni joriy etish hamda
-            xalq ta’limi tizimi xodimlari o‘rtasida o‘zaro tajriba almashish
-            ishlarini yo‘lga qo‘yiladi.
-          </li>
-          <li class="about-us-item">
-            Ilg‘or ish tajribalarni ommalashtirish – bu talabgor tomonidan o‘quv
-            jarayonini samarali tashkil etish, zamonaviy pedagogik
-            texnologiyalarni joriy etish va ta’lim sifatini oshirishga
-            qaratilgan ilg‘or ish uslubini boshqalarga amaliyotda foydalanish
-            uchun tavsiya etiladi.
-          </li>
-          <li class="about-us-item">
-            Talabgorlarning ilg‘or ish tajribalarini o‘rganish va ommalashtirish
-            ishlari www.ommalashtirish.uz platformasi orqali amalga oshiriladi.
-          </li>
-        </ul>
-      </div>
-      <div class="right-content">
-        <div class="right-content-image"></div>
-      </div>
-    </div>
-    <!-- statistics about us -->
-    <div class="statistics-block-container">
-      <div class="statistics-block">
-        <div class="statistics-block-filter">
-          <div class="container">
-            <div class="statistics">
-              <img src="./public/statistics.svg" alt="Qamrab olinganlik" />
-              <div class="statistics-info">
-                <h1>97%</h1>
-                <p>Qamrab olinganlik</p>
-              </div>
-            </div>
-            <div class="statistics">
-              <img src="./public/lessons.svg" alt="Dars ishlanma" />
-              <div class="statistics-info">
-                <h1>286</h1>
-                <p>Dars ishlanma</p>
-              </div>
-            </div>
-            <div class="statistics">
-              <img src="./public/videos.svg" alt="Videodars" />
-              <div class="statistics-info">
-                <h1>369</h1>
-                <p>Videodars</p>
-              </div>
-            </div>
-            <div class="statistics">
-              <img src="./public/methodics.svg" alt="Metodik qo‘llanma" />
-              <div class="statistics-info">
-                <h1>365</h1>
-                <p>Metodik qo‘llanma</p>
-              </div>
-            </div>
-          </div>
+    <div class="block-id" id="about_as">
+      <!-- about as - (Biz haqimizda) -->
+      <div class="about-us-container">
+        <div class="left-content">
+          <h1 class="about-us-title">Biz haqimizda</h1>
+          <ul class="about-us-lists">
+            <li class="about-us-item">
+              Umumiy o‘rta ta’lim tizimiga o‘quv jarayonini samarali tashkil
+              etish va o‘quv jarayoniga ta’lim sifatini oshirishga qaratilgan
+              ilg‘or ish tajribalar, zamonaviy pedagogik texnologiyalarni joriy
+              etish hamda xalq ta’limi tizimi xodimlari o‘rtasida o‘zaro tajriba
+              almashish ishlarini yo‘lga qo‘yiladi.
+            </li>
+            <li class="about-us-item">
+              Ilg‘or ish tajribalarni ommalashtirish – bu talabgor tomonidan
+              o‘quv jarayonini samarali tashkil etish, zamonaviy pedagogik
+              texnologiyalarni joriy etish va ta’lim sifatini oshirishga
+              qaratilgan ilg‘or ish uslubini boshqalarga amaliyotda foydalanish
+              uchun tavsiya etiladi.
+            </li>
+            <li class="about-us-item">
+              Talabgorlarning ilg‘or ish tajribalarini o‘rganish va
+              ommalashtirish ishlari www.ommalashtirish.uz platformasi orqali
+              amalga oshiriladi.
+            </li>
+          </ul>
+        </div>
+        <div class="right-content">
+          <div class="right-content-image"></div>
         </div>
       </div>
     </div>
+
     <!-- sample works (Namunaviy ishlar) -->
-    <div class="container" id="sample_works">
-      <h1 class="sample-works-title">Namunaviy ishlar</h1>
-      <div class="owl-carousel owl-theme">
-        <div class="sample-works-block">
-          <div class="sample-works">
-            <div class="sample-works-header">
-              <h1 class="sample-works-name">Xalida Turakulova</h1>
-              <div class="sample-works-locatin">
-                <img src="./public/location.svg" alt="location" />
-                Jizzax viloyati Жиззах шхтб 29 Мактаб.
+    <div class="block-id" id="sample_works">
+      <div class="container">
+        <h1 class="sample-works-title">Namunaviy ishlar</h1>
+        <div class="owl-carousel owl-theme">
+          <div class="sample-works-block">
+            <div class="sample-works">
+              <div class="sample-works-header">
+                <h1 class="sample-works-name">Xalida Turakulova</h1>
+                <div class="sample-works-locatin">
+                  <img src="./public/location.svg" alt="location" />
+                  Jizzax viloyati Жиззах шхтб 29 Мактаб.
+                </div>
+              </div>
+              <img
+                src="./public/sample-works.png"
+                alt="sample works"
+                class="sample-works-image"
+              />
+            </div>
+            <div class="sample-works-info">
+              <div>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/user.svg" />
+                  Xalida Turakulova
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/location.svg" />
+                  Jizzax viloyati, Jizzax shahari
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/school.svg" />
+                  Жиззах шхтб 29 Мактаб.
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/wiev.svg" />
+                  5 320
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/download.svg" />
+                  200
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/star.svg" />
+                  5
+                </h3>
               </div>
             </div>
-            <img
-              src="./public/sample-works.png"
-              alt="sample works"
-              class="sample-works-image"
-            />
           </div>
-          <div class="sample-works-info">
-            <div>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/user.svg" />
-                Xalida Turakulova
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/location.svg" />
-                Jizzax viloyati, Jizzax shahari
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/school.svg" />
-                Жиззах шхтб 29 Мактаб.
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/wiev.svg" />
-                5 320
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/download.svg" />
-                200
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/star.svg" />
-                5
-              </h3>
+
+          <div class="sample-works-block">
+            <div class="sample-works">
+              <div class="sample-works-header">
+                <h1 class="sample-works-name">Xalida Turakulova</h1>
+                <div class="sample-works-locatin">
+                  <img src="./public/location.svg" alt="location" />
+                  Jizzax viloyati Жиззах шхтб 29 Мактаб.
+                </div>
+              </div>
+              <img
+                src="./public/sample-works.png"
+                alt="sample works"
+                class="sample-works-image"
+              />
+            </div>
+            <div class="sample-works-info">
+              <div>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/user.svg" />
+                  Xalida Turakulova
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/location.svg" />
+                  Jizzax viloyati, Jizzax shahari
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/school.svg" />
+                  Жиззах шхтб 29 Мактаб.
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/wiev.svg" />
+                  5 320
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/download.svg" />
+                  200
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/star.svg" />
+                  5
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="sample-works-block">
+            <div class="sample-works">
+              <div class="sample-works-header">
+                <h1 class="sample-works-name">Xalida Turakulova</h1>
+                <div class="sample-works-locatin">
+                  <img src="./public/location.svg" alt="location" />
+                  Jizzax viloyati Жиззах шхтб 29 Мактаб.
+                </div>
+              </div>
+              <img
+                src="./public/sample-works.png"
+                alt="sample works"
+                class="sample-works-image"
+              />
+            </div>
+            <div class="sample-works-info">
+              <div>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/user.svg" />
+                  Xalida Turakulova
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/location.svg" />
+                  Jizzax viloyati, Jizzax shahari
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/school.svg" />
+                  Жиззах шхтб 29 Мактаб.
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/wiev.svg" />
+                  5 320
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/download.svg" />
+                  200
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/star.svg" />
+                  5
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="sample-works-block">
+            <div class="sample-works">
+              <div class="sample-works-header">
+                <h1 class="sample-works-name">Xalida Turakulova</h1>
+                <div class="sample-works-locatin">
+                  <img src="./public/location.svg" alt="location" />
+                  Jizzax viloyati Жиззах шхтб 29 Мактаб.
+                </div>
+              </div>
+              <img
+                src="./public/sample-works.png"
+                alt="sample works"
+                class="sample-works-image"
+              />
+            </div>
+            <div class="sample-works-info">
+              <div>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/user.svg" />
+                  Xalida Turakulova
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/location.svg" />
+                  Jizzax viloyati, Jizzax shahari
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/school.svg" />
+                  Жиззах шхтб 29 Мактаб.
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/wiev.svg" />
+                  5 320
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/download.svg" />
+                  200
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/star.svg" />
+                  5
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="sample-works-block">
+            <div class="sample-works">
+              <div class="sample-works-header">
+                <h1 class="sample-works-name">Xalida Turakulova</h1>
+                <div class="sample-works-locatin">
+                  <img src="./public/location.svg" alt="location" />
+                  Jizzax viloyati Жиззах шхтб 29 Мактаб.
+                </div>
+              </div>
+              <img
+                src="./public/sample-works.png"
+                alt="sample works"
+                class="sample-works-image"
+              />
+            </div>
+            <div class="sample-works-info">
+              <div>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/user.svg" />
+                  Xalida Turakulova
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/location.svg" />
+                  Jizzax viloyati, Jizzax shahari
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/school.svg" />
+                  Жиззах шхтб 29 Мактаб.
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/wiev.svg" />
+                  5 320
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/download.svg" />
+                  200
+                </h3>
+                <h3 class="sample-works-text">
+                  <img src="./public/sample-works-icons/star.svg" />
+                  5
+                </h3>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="sample-works-block">
-          <div class="sample-works">
-            <div class="sample-works-header">
-              <h1 class="sample-works-name">Xalida Turakulova</h1>
-              <div class="sample-works-locatin">
-                <img src="./public/location.svg" alt="location" />
-                Jizzax viloyati Жиззах шхтб 29 Мактаб.
+      </div>
+      <!-- statistics about us -->
+      <div class="statistics-block-container block-id">
+        <div class="statistics-block">
+          <div class="statistics-block-filter">
+            <div class="container">
+              <div class="statistics">
+                <img src="./public/statistics.svg" alt="Qamrab olinganlik" />
+                <div class="statistics-info">
+                  <h1>97%</h1>
+                  <p>Qamrab olinganlik</p>
+                </div>
               </div>
-            </div>
-            <img
-              src="./public/sample-works.png"
-              alt="sample works"
-              class="sample-works-image"
-            />
-          </div>
-          <div class="sample-works-info">
-            <div>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/user.svg" />
-                Xalida Turakulova
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/location.svg" />
-                Jizzax viloyati, Jizzax shahari
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/school.svg" />
-                Жиззах шхтб 29 Мактаб.
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/wiev.svg" />
-                5 320
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/download.svg" />
-                200
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/star.svg" />
-                5
-              </h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="sample-works-block">
-          <div class="sample-works">
-            <div class="sample-works-header">
-              <h1 class="sample-works-name">Xalida Turakulova</h1>
-              <div class="sample-works-locatin">
-                <img src="./public/location.svg" alt="location" />
-                Jizzax viloyati Жиззах шхтб 29 Мактаб.
+              <div class="statistics">
+                <img src="./public/lessons.svg" alt="Dars ishlanma" />
+                <div class="statistics-info">
+                  <h1>286</h1>
+                  <p>Dars ishlanma</p>
+                </div>
               </div>
-            </div>
-            <img
-              src="./public/sample-works.png"
-              alt="sample works"
-              class="sample-works-image"
-            />
-          </div>
-          <div class="sample-works-info">
-            <div>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/user.svg" />
-                Xalida Turakulova
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/location.svg" />
-                Jizzax viloyati, Jizzax shahari
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/school.svg" />
-                Жиззах шхтб 29 Мактаб.
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/wiev.svg" />
-                5 320
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/download.svg" />
-                200
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/star.svg" />
-                5
-              </h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="sample-works-block">
-          <div class="sample-works">
-            <div class="sample-works-header">
-              <h1 class="sample-works-name">Xalida Turakulova</h1>
-              <div class="sample-works-locatin">
-                <img src="./public/location.svg" alt="location" />
-                Jizzax viloyati Жиззах шхтб 29 Мактаб.
+              <div class="statistics">
+                <img src="./public/videos.svg" alt="Videodars" />
+                <div class="statistics-info">
+                  <h1>369</h1>
+                  <p>Videodars</p>
+                </div>
               </div>
-            </div>
-            <img
-              src="./public/sample-works.png"
-              alt="sample works"
-              class="sample-works-image"
-            />
-          </div>
-          <div class="sample-works-info">
-            <div>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/user.svg" />
-                Xalida Turakulova
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/location.svg" />
-                Jizzax viloyati, Jizzax shahari
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/school.svg" />
-                Жиззах шхтб 29 Мактаб.
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/wiev.svg" />
-                5 320
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/download.svg" />
-                200
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/star.svg" />
-                5
-              </h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="sample-works-block">
-          <div class="sample-works">
-            <div class="sample-works-header">
-              <h1 class="sample-works-name">Xalida Turakulova</h1>
-              <div class="sample-works-locatin">
-                <img src="./public/location.svg" alt="location" />
-                Jizzax viloyati Жиззах шхтб 29 Мактаб.
+              <div class="statistics">
+                <img src="./public/methodics.svg" alt="Metodik qo‘llanma" />
+                <div class="statistics-info">
+                  <h1>365</h1>
+                  <p>Metodik qo‘llanma</p>
+                </div>
               </div>
-            </div>
-            <img
-              src="./public/sample-works.png"
-              alt="sample works"
-              class="sample-works-image"
-            />
-          </div>
-          <div class="sample-works-info">
-            <div>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/user.svg" />
-                Xalida Turakulova
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/location.svg" />
-                Jizzax viloyati, Jizzax shahari
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/school.svg" />
-                Жиззах шхтб 29 Мактаб.
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/wiev.svg" />
-                5 320
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/download.svg" />
-                200
-              </h3>
-              <h3 class="sample-works-text">
-                <img src="./public/sample-works-icons/star.svg" />
-                5
-              </h3>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- popularization-procedure (ommalashtirish tartibi) -->
+    <div class="container">
+      <h1 class="sample-works-title">Ommalashtirish tartibi</h1>
+      <div class="popularization-procedure-block">
+        <div class="popularization-procedure">
+          <div class="step">1</div>
+          <div class="icon-block">
+            <img src="./public/popularization-procedure/login.svg" />
+          </div>
+          <div class="popularization-procedure-content">
+            <p class="popularization-procedure-info">
+              ERP orqali tizimimizdan ro'yhatdan o'ting va o'z ishingizni
+              ommalashtirish uchun tizimga joylang
+            </p>
+            <p class="manual"><img src="./public/download.svg" />Qo'llanma</p>
+            <a href="https://ommalashtirish.uz/auth/erp">
+              <button class="blue-green border">
+                <p>Ro'yxatdan o'tish</p>
+                <div></div>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="popularization-procedure">
+          <div class="step">2</div>
+          <div class="icon-block">
+            <img src="./public/popularization-procedure/evaluation.svg" />
+          </div>
+          <div class="popularization-procedure-content">
+            <p class="popularization-procedure-info">
+              Tizimga joylangan ommalashtirish ishini sizning faningizdan dars
+              beradigan boshqa o'qituvchilar tomonidan 2 oy baholanishini
+              kuting.
+            </p>
+          </div>
+        </div>
+
+        <div class="popularization-procedure">
+          <div class="step">3</div>
+          <div class="icon-block">
+            <img src="./public/popularization-procedure/rating.svg" />
+          </div>
+          <div class="popularization-procedure-content">
+            <p class="popularization-procedure-info">
+              Eng ko'p va eng yuqori baholangan har bir fandan 100 ta ishni
+              ekspertlar tomonidan baholanadi va tizim uni kamayish usulida
+              Respublika, Viloyat, Tumanda ommalashganini ajratib beradi.
+            </p>
+          </div>
+        </div>
+
+        <div class="popularization-procedure">
+          <div class="step">4</div>
+          <div class="icon-block">
+            <img src="./public/popularization-procedure/license.svg" />
+          </div>
+          <div class="popularization-procedure-content">
+            <p class="popularization-procedure-info">
+              Sizning ishingiz ommmalashgan bo'lsa , o'zingizning shaxsiy
+              kabinetingizdan ishingiz ommalashgani to'g'risida Sertifikatlarni
+              yuklab oling.
+            </p>
+          </div>
+        </div>
+      </div>
+      <p class="popularization-procedure-download">
+        <a href="#">
+          Ommalashtirish nizomi
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.125 10H16.875"
+              stroke="#1A2B3B"
+              stroke-width="1.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M11.25 4.375L16.875 10L11.25 15.625"
+              stroke="#1A2B3B"
+              stroke-width="1.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </p>
+    </div>
+
+    <!-- legal-basis (huquqiy asos) -->
+    <div class="container">
+      <h1 class="sample-works-title">Huquqiy asos</h1>
+
+      <div class="legal-basis-container">
+        <div class="legal-basis">
+          <div class="legal-basis-image"></div>
+          <div class="legal-basis-info">
+            <div>
+              <h1>lorem ipson</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                sint adipisci ipsam!
+              </p>
+            </div>
+            <a href="#">
+              <p class="manual"><img src="./public/download.svg" />Qo'llanma</p>
+            </a>
+          </div>
+        </div>
+        <div class="legal-basis">
+          <div class="legal-basis-image"></div>
+          <div class="legal-basis-info">
+            <div>
+              <h1>lorem ipson</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                sint adipisci ipsam!
+              </p>
+            </div>
+            <a href="#">
+              <p class="manual"><img src="./public/download.svg" />Qo'llanma</p>
+            </a>
+          </div>
+        </div>
+        <div class="legal-basis">
+          <div class="legal-basis-image"></div>
+          <div class="legal-basis-info">
+            <div>
+              <h1>lorem ipson</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                sint adipisci ipsam!
+              </p>
+            </div>
+            <a href="#">
+              <p class="manual"><img src="./public/download.svg" />Qo'llanma</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- footer -->
-    <div class="footer-block">
+    <div class="footer-block block-id">
       <div class="container">
         <div class="logos">
-          <img
-            src="./public/footer-logos/uz-res-talim-vazirligi.png"
-            alt="O’zbekiston Respublikasi Xalq Ta’limi vazirligi"
-          />
-          <img
-            src="./public/footer-logos/republika-talim-markazi.png"
-            alt="Respublika ta’lim markazi"
-          />
+          <a href="https://www.uzedu.uz/" target="_blank">
+            <img
+              src="./public/footer-logos/uz-res-talim-vazirligi.png"
+              alt="O’zbekiston Respublikasi Xalq Ta’limi vazirligi"
+            />
+          </a>
+          <a href="http://edurtm.uz/" target="_blank">
+            <img
+              src="./public/footer-logos/republika-talim-markazi.png"
+              alt="Respublika ta’lim markazi"
+            />
+          </a>
         </div>
         <div class="footer-info">
           <h1>
@@ -463,19 +631,49 @@
         </div>
         <div>
           <ul class="footer-menus-list">
-            <li href="#home" class="menu-item">Asosiy</li>
-            <li href="#products" class="menu-item">Metodik mahsulotlar</li>
-            <li href="#about_as" class="menu-item">Biz haqimizda</li>
-            <li href="#sample_works" class="menu-item">Namunaviy ishlar</li>
+            <li href="#home" class="menu-item">
+              <a> Asosiy </a>
+            </li>
+            <li href="#products" class="menu-item">
+              <a> Metodik mahsulotlar </a>
+            </li>
+            <li href="#about_as" class="menu-item">
+              <a> Biz haqimizda </a>
+            </li>
+            <li href="#sample_works" class="menu-item">
+              <a> Namunaviy ishlar </a>
+            </li>
             <li href="https://ommalashtirish.uz/populars">
-              Ommalashtirish ishlari
+              <a href="https://ommalashtirish.uz/populars">
+                Ommalashtirish ishlari
+              </a>
             </li>
           </ul>
           <ul class="footer-menus-list">
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Linkedin</li>
-            <li>Instagram</li>
+            <li>
+              <a href="https://www.facebook.com/edurtm.uz/" target="_blank">
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a href="https://t.me/edurtm_uz" target="_blank"> Telegram </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCTcedC5HxHGnHRSYeyoV5ZQ"
+                target="_blank"
+              >
+                Youtube
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/accounts/login/?next=/edurtm.uz/"
+                target="_blank"
+              >
+                Instagram
+              </a>
+            </li>
           </ul>
         </div>
       </div>
