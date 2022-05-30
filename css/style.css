@@ -842,6 +842,12 @@ nav > div:first-child {
   color: #1a2b3b;
   letter-spacing: 0.08em;
 }
+.popularization-procedure-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 12px;
+}
 .manual {
   font-family: "Source Sans Pro";
   font-style: normal;
@@ -859,36 +865,16 @@ nav > div:first-child {
   padding-bottom: 16px;
 }
 .popularization-procedure-download {
-  margin-top: 32px;
+  margin-top: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
 }
-.popularization-procedure-download > a {
-  font-family: "Source Sans Pro";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  letter-spacing: 0.08em;
-  color: #1a2b3b;
-  cursor: pointer;
-
+.popularization-procedure-download p {
   display: flex;
   align-items: center;
-  gap: 8px;
-}
-.popularization-procedure-download svg {
-  transition: all 500ms ease-in-out;
-}
-.popularization-procedure-download > a:hover {
-  color: #76cdd8;
-}
-.popularization-procedure-download > a:hover > svg {
-  transform: translateX(2px);
-}
-.popularization-procedure-download > a:hover > svg > path {
-  stroke: #76cdd8;
+  gap: 6px;
 }
 
 /* footer - style */
