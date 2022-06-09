@@ -917,19 +917,18 @@ nav > div:first-child {
 .footer-info > h1 {
   font-family: "Source Sans Pro";
   font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 30px;
+  font-weight: 300;
+  font-size: 22px;
   color: #ffffff;
   margin-bottom: 14px;
 }
 .footer-info > p {
   font-family: "Source Sans Pro";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 14px;
-  line-height: 22px;
   color: #ffffff;
+
   border-bottom: 1px solid #0081fe;
 }
 .footer-menus-list {
@@ -942,15 +941,14 @@ nav > div:first-child {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
   color: #ffffff;
-  opacity: 0.75;
+
   cursor: pointer;
   transition: all 160ms ease-in-out;
 }
 
 .footer-menus-list > li > a:hover {
-  opacity: 1;
+  color: #76cdd8;
 }
 .bottom-content {
   display: flex;
